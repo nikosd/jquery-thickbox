@@ -1,0 +1,20 @@
+Before you can implement ThickBox make sure the page that invokes ThickBox has a valid DTD. This is required for ThickBox to look and function correctly.
+
+1. ThickBox requires the jQuery JavaScript library; because of this, you will need to include the jquery.js file in the head element of your web page, followed by the thickbox.js file (NOTE: jquery.js must come first in the source order). Example below:
+
+<script type="text/javascript" src="path-to-file/jquery.js"></script>
+<script type="text/javascript" src="path-to-file/thickbox.js"></script>
+
+Once you have included the .js files, open thickbox.js or thickbox-compressed.js and locate the tb_pathToImage variable at the top of the page. Once you have found it, make sure to change the value of tb_pathToImage to the path where the loadingAnimation.gif file is located on your own server.
+
+2. Include the ThickBox CSS file in your web page. As of version 3.1 you will also need to update the path to the macFFBgHack.png in the thickbox.css file. Example options below:
+
+<link rel="stylesheet" href="path-to-file/thickbox.css" type="text/css" media="screen" />
+
+Or
+
+<style type="text/css" media="all">@import "path-to-file/thickbox.css";</style>
+
+Or, open the thickbox.css file and copy and paste the styles into an existing style sheet. Be aware that the ThickBox CSS file will remove the browsers default padding and margin for all elements.
+
+3. View the examples to learn the many different ways to use and invoke ThickBox functionality.
